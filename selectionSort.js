@@ -1,3 +1,11 @@
+/*
+Ordenaçao por seleçao
+Funcionamento: O algoritmo percorre a lista e encontra o menor (ou maior) elemento, 
+trocando-o com o primeiro elemento da parte não ordenada. Esse processo é repetido para 
+cada posição subsequente.
+*/
+
+
 function selectionSort(array) {
 	let menorPosicao;
 
@@ -9,6 +17,7 @@ function selectionSort(array) {
 				menorPosicao = j;
 		}
 
+		//se o i for o menor entao troca
 		if (i != menorPosicao) {
 			let temp = array[i];
 			array[i] = array[menorPosicao];
